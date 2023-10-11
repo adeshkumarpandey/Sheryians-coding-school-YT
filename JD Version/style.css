@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#circle {
+    height: 60px;
+    width: 60px;
+    border: 1.2px solid #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}
+
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    stroke-dashoffset: 1000px;
+    stroke-dasharray: 1000px;
+}
+
+.animate{
+    animation: animation 10s ease-in-out both;
+}
+
+#background {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-fill-color: transparent;
+    height: 100%;
+    width: 100%;
+    background-position: 60%;
+    background-size: contain;
+    -webkit-background-clip: text;
+    background-image: url(https://images.unsplash.com/photo-1693751498953-b46e1aa07596?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1885&q=80);
+
+}
+
+#wrapper h1 {
+    color: #fff;
+    font-size: 600px;
+    font-weight: 800;
+    font-family: "Montserrat Black";
+}
+
+#whitestrip {
+    height: 140px;
+    width: 52.8%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blackcard {
+    height: 330px;
+    width: 240px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+#blackcard p {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 26px;
+    font-family: "Playfair Display";
+}
+
+#linelem {
+    display: flex;
+    align-items: center;
+}
+
+#linelem .line {
+    height: 1.5px;
+    width: 200px;
+    background-color: black;
+    margin: 0 30px;
+}
+
+#linelem h1 {
+    font-family: "Playfair Display";
+    font-size: 15px;
+}
+
+#linelem i {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#background>h5 {
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg);
+    color: #fff;
+    font-weight: 600;
+    font-family: "montserrat";
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+@keyframes animation {
+    to{
+        stroke-dasharray: 450px;
+    }
+}

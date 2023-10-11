@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#parent {
+    height: 100vh;
+    width: 100vw;
+    background-color: crimson;
+}
+#child{
+    height: 80vh;
+    width: 80vw;
+    background-color: royalblue; 
+    font-size: 7px;
+}
+h1{
+    font-size: 1em;
+}h2{
+    font-size: 2em;
+}h3{
+    font-size: 3em;
+}

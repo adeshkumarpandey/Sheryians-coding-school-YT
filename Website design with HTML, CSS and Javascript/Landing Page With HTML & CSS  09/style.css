@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    background-color: #fff;
+}
+#nav h3{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+#heading {
+    height: 40vh;
+    width: 100%;
+    background-color: antiquewhite;
+}
